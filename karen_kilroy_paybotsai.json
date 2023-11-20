@@ -1,0 +1,72 @@
+{
+  "alg": "ps256",
+  "private_key": "../knowbots_private.key",
+  "sign_cert": "../knowbots_certificate.pem",
+  "ta_url": "http://timestamp.digicert.com",
+  "claim_generator": "c2patool",
+  "title": "Paybots.AI Images",
+  "format": "image/png",
+  "instance_id": "xmp:iid:04c9f006-bc75-4e75-9caa-d838cc993481",
+  "assertions": [
+    {
+      "label": "stds.schema-org.CreativeWork",
+      "data": {
+        "@context": "https://schema.org",
+        "@type": "CreativeWork",
+        "author": [
+          {
+            "@id": "https://www.linkedin.com/in/karenkilroy/",
+            "@type": "Person",
+            "name": "Karen Kilroy"
+          },
+          {
+          "@type": "Person",
+          "name": "Karen Kilroy"
+          }
+        ],
+        "description": "logos combined into a banner"
+      },
+      "kind": "Json"
+    },
+    {
+      "label": "c2pa.actions",
+      "data": {
+        "actions": [
+          {
+            "action": "created"
+          }
+        ]
+      }
+    },
+    {
+      "label": "c2pa.licensing",
+      "data": {
+        "contact": "Karen Kilroy for licensing"
+      },
+      "kind": "Json"
+    },
+    {
+      "label": "custom.assertion.KilroyWasHere",
+      "data": "This is a custom assertion for 'Kilroy Was Here'",
+      "kind": "Json"
+    },
+    {
+      "label": "c2pa.training-mining",
+      "data": {
+        "entries": {
+          "c2pa.ai_generative_training": { "use": "notAllowed" },
+          "c2pa.ai_inference": { "use": "notAllowed" },
+          "c2pa.ai_training": { "use": "notAllowed" },
+          "c2pa.data_mining": { "use": "notAllowed" }
+        }
+      },
+      "kind": "Json"
+    }
+  ],
+  "label": "urn:uuid:984cdf10-94ef-45db-b6af-705b7afb5386",
+  "distribution": {
+    "method": "online",
+    "purpose": "website content"
+  }
+}
+
